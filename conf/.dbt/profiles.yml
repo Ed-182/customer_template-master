@@ -1,4 +1,5 @@
-default:  
+default:
+  target: agency_test  
   outputs:
     agency_test:
       type: bigquery
@@ -11,6 +12,7 @@ default:
       keyfile: conf/.dbt/gbq_creds.json
       
 clickhouse:
+  target: agency_test
   outputs:
     agency_test:
       type: clickhouse
