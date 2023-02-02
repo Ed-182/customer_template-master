@@ -35,18 +35,12 @@ clean-targets:         # directories to be removed by `dbt clean`
 #TODO: Uncomment when you'll create models
 models:
   jaffle_shop:
-    marts:
-      core:
-        +materialized: table
-    staging:
-      +materialized: view
-
   stripe:
     marts:
       core:
         +materialized: table
     staging:
-      +materialized: view      
+      +materialized: view   
 
 vars:
   custom_schema: '{{ target.schema }}'
