@@ -1,12 +1,19 @@
-with orders as (
+with 
 
-select
-    id as order_id,
-    user_id as customer_id,
-    order_date,
-    status
+source as (
 
-from `dbt-tutorial`.jaffle_shop.orders
+    select * from {{ source('jaffle_shop', 'orders') }}
+
+),
+
+staged as (
+
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+    from source
 
 )
 

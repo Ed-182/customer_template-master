@@ -1,11 +1,19 @@
-with customers as (
+with 
 
-select
-    id as customer_id,
-    first_name,
-    last_name
+source as (
 
-from `dbt-tutorial`.jaffle_shop.customers
+    select * from {{ source('jaffle_shop', 'customers') }}
+
+),
+
+staged as (
+
+    select
+        id as customer_id,
+        first_name,
+        last_name
+    from source
+
 )
 
-select * from customers
+select * from staged
