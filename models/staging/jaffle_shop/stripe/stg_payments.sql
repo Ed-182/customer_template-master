@@ -14,4 +14,4 @@ from `dbt-tutorial`.stripe.payment
 
 )
 
-select * from orders 
+select * from payments 
