@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: jaffle_shop
-    database: durable-zoo-375901
+    database: `dbt-tutorial`
     tables:
       - name: customers
       - name: orders
