@@ -21,4 +21,4 @@ staged as (
 
 )
 
-select * from payments 
+select * from staged

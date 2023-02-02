@@ -17,4 +17,4 @@ staged as (
 
 )
 
-select * from orders  
+select * from staged  
