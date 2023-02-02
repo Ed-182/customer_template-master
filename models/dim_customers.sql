@@ -1,3 +1,7 @@
+create or replace view durable-zoo-375901.jaffle.shop.dim_customers
+
+as (
+
 with customers as (
 
     select
@@ -53,3 +57,5 @@ final as (
 )
 
 select * from final
+
+)
