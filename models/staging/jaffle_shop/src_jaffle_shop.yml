@@ -17,9 +17,6 @@ sources:
             tests:
               - unique
               - not_null
-          - name: status
-            tests:
-              - unique
 
         loaded_at_field: _etl_loaded_at
         freshness:
