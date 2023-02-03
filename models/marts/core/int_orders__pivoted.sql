@@ -15,4 +15,3 @@ pivoted as (
 )
 
 select * from pivoted
-ORDER BY order_id
