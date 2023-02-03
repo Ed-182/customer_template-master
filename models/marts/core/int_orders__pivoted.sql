@@ -1,5 +1,5 @@
 with payments as (
-    select * from {{ ('stg_payments') }}
+    select * from {{ ref('stg_payments') }}
 )
 
 pivoted as (
