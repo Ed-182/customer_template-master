@@ -5,7 +5,7 @@ select
     status,
 
     -- amount is stored in cents, convert it to dollars
-    {{% cents_to_dollars() %}} as amount,
+    {{ cents_to_dollars('amount') }} as amount,
     created as created_at
 
 from `dbt-tutorial`.stripe.payment
