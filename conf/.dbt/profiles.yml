@@ -33,7 +33,7 @@ snowflake:
       type: snowflake
       account: td00787.us-east-2
       database: FIVETRAN_DATABASE
-      password: password123
+      password: Duae0313!
       role: ACCOUNTADMIN
       schema: PUBLIC
       threads: 10
