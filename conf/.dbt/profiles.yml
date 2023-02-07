@@ -35,7 +35,7 @@ snowflake:
       database: FIVETRAN_DATABASE
       password: password123
       role: ACCOUNTADMIN
-      schema: "{{ env_var('SNOWFLAKE_DB_SCHEMA') }}"
+      schema: PUBLIC
       threads: 10
       user: "{{ env_var('SNOWFLAKE_DB_USER') }}"
       warehouse: "{{ env_var('SNOWFLAKE_DB_WAREHOUSE') }}"
