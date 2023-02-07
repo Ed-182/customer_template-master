@@ -39,4 +39,3 @@ snowflake:
       type: snowflake
       user: 
       warehouse: COMPUTE_WH
-  target: dev
