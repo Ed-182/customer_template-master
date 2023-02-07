@@ -1,7 +1,7 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'jaffle_shop'
+name: 'dbt_costimer_template_master'
 version: '1.0.0'
 config-version: 2
 
@@ -33,13 +33,13 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 #TODO: Uncomment when you'll create models
-models:
-  jaffle_shop:
-    marts:
-      core:
-        +materialized: table
-    staging:
-      +materialized: view   
+# models:
+#  jaffle_shop:
+#    marts:
+#      core:
+#        +materialized: table
+#    staging:
+#      +materialized: view
 
 vars:
   custom_schema: '{{ target.schema }}'
