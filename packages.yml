@@ -1,3 +1,5 @@
 packages:
   - package: dbt-labs/dbt_utils
     version: 1.0.0
+  - package: fivetran/tiktok_ads
+    version: [">=0.3.0", "<0.4.0"]
