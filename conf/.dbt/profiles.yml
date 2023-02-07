@@ -31,11 +31,11 @@ snowflake:
   outputs:
     agency_test:
       type: snowflake
-      account: td00787.us-east-2   
-      database: FIVETRAN_DATABASE
-      password: password123
-      role: ACCOUNTADMIN
-      schema: PUBLIC
+      host: "{{ env_var('SNOWFLAKE_DB_HOST') }}"  
+      database: "{{ env_var('SNOWFLAKE_DB_NAME') }}"
+      password: "{{ env_var('SNOWFLAKE_DB_PASSWORD') }}"
+      role: "{{ env_var('SNOWFLAKE_DB_ROLE') }}"
+      schema: "{{ env_var('SNOWFLAKE_DB_SCHEMA') }}"
       threads: 10
-      user: ED182
-      warehouse: COMPUTE_WH
+      user: "{{ env_var('SNOWFLAKE_DB_USER') }}"
+      warehouse: "{{ env_var('SNOWFLAKE_DB_WAREHOUSE') }}"
