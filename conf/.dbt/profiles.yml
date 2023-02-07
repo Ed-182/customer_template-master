@@ -25,3 +25,17 @@ clickhouse:
       secure: True
       send_receive_timeout: 1200
       threads: 10
+
+snowflake:
+  target: agency_test
+  outputs:
+    agency_test:
+      type: snowflake
+      account: td00787.us-east-2.aws
+      database: FIVETRAN_DATABASE
+      password: Duae0313!
+      role: ACCOUNTADMIN
+      schema: PUBLIC
+      threads: 10
+      user: EDY
+      warehouse: COMPUTE_WH
