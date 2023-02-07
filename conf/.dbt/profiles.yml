@@ -38,4 +38,4 @@ snowflake:
       schema: PUBLIC
       threads: 10
       user: ED182
-      warehouse: "{{ env_var('SNOWFLAKE_DB_WAREHOUSE') }}"
+      warehouse: COMPUTE_WH
