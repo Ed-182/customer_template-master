@@ -42,8 +42,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 #      +materialized: view
 
 vars:
-  custom_schema: '{{ target.schema }}'
-
   ad_reporting__amazon_ads_enabled: False # by default this is assumed to be True
   ad_reporting__apple_search_ads_enabled: False # by default this is assumed to be True
   ad_reporting__pinterest_ads_enabled: False # by default this is assumed to be True
