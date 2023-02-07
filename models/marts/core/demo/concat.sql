@@ -1,3 +1,9 @@
+{{
+  config(
+    materialized='table'
+  )
+}}
+
 with concat_data as (
     select * from {{ source('fivetran','EMPLOYEE_DATA') }}
 ),
