@@ -51,23 +51,18 @@ vars:
   ad_reporting__linkedin_ads_enabled: False # by default this is assumed to be True
   ad_reporting__snapchat_ads_enabled: False # by default this is assumed to be True
 
-  facebook_ads_schema: facebook_ads
-  google_ads_schema: google_ads
-  twitter_ads_schema: twitter_ads    
-  tiktok_ads_schema: tiktok_ads
-
 models:  
   ad_reporting:
-    +schema: ad_reporting
+    +schema: PUBLIC
   
   facebook_ads:
-    +schema: facebook_ads
+    +schema: PUBLIC
   
   google_ads:
-    +schema: google_ads
+    +schema: PUBLIC
   
   twitter_ads:
-    +schema: twitter_ads
+    +schema: PUBLIC
   
   tiktok_ads:
     +schema: tiktok_ads
