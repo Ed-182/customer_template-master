@@ -33,7 +33,7 @@ snowflake:
       type: snowflake
       account: td00787.us-east-2.aws
       database: FIVETRAN_DATABASE
-      password: "{{ env_var('SNOWFLAKE_DB_PASSWORD') }}"
+      password: password123
       role: "{{ env_var('SNOWFLAKE_DB_ROLE') }}"
       schema: "{{ env_var('SNOWFLAKE_DB_SCHEMA') }}"
       threads: 10
