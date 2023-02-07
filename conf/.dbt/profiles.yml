@@ -38,4 +38,4 @@ snowflake:
       schema: PUBLIC
       threads: 10
       user: EDY
-      warehouse: COMPUTE_WH
+      warehouse: PC_FIVETRAN_WH
