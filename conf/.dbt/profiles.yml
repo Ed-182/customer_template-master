@@ -31,7 +31,7 @@ snowflake:
   outputs:
     agency_test:
       type: snowflake
-      host: "{{ env_var('SNOWFLAKE_DB_HOST') }}"  
+      account: "{{ env_var('SNOWFLAKE_DB_HOST') }}"  
       database: "{{ env_var('SNOWFLAKE_DB_NAME') }}"
       password: "{{ env_var('SNOWFLAKE_DB_PASSWORD') }}"
       role: "{{ env_var('SNOWFLAKE_DB_ROLE') }}"
