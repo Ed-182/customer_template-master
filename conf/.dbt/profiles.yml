@@ -37,5 +37,5 @@ snowflake:
       role: ACCOUNTADMIN
       schema: PUBLIC
       threads: 10
-      user: ED182
+      user: edy
       warehouse: COMPUTE_WH
