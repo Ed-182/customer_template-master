@@ -32,7 +32,7 @@ snowflake:
     agency_test:
       type: snowflake
       account: td00787.us-east-2.aws
-      database: "{{ env_var('SNOWFLAKE_DB_NAME') }}"
+      database: FIVETRAN_DATABASE
       password: "{{ env_var('SNOWFLAKE_DB_PASSWORD') }}"
       role: "{{ env_var('SNOWFLAKE_DB_ROLE') }}"
       schema: "{{ env_var('SNOWFLAKE_DB_SCHEMA') }}"
