@@ -63,4 +63,4 @@ models:
     +schema: PUBLIC
   
   tiktok_ads:
-    +schema: tiktok_ads
+    +schema: PUBLIC
