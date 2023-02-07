@@ -30,12 +30,13 @@ snowflake:
   target: agency_test
   outputs:
     agency_test:
-	    type: snowflake
       account: td00787.us-east-2   
       database: FIVETRAN_DATABASE
       password: password123
       role: ACCOUNTADMIN
       schema: PUBLIC
-      threads: 10      
-      user: ED182
+      threads: 10
+      type: snowflake
+      user: 
       warehouse: COMPUTE_WH
+  target: dev
