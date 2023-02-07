@@ -30,7 +30,7 @@ snowflake:
   target: agency_test
   outputs:
     agency_test:
-	type: snowflake
+	    type: snowflake
       account: td00787.us-east-2   
       database: FIVETRAN_DATABASE
       password: password123
