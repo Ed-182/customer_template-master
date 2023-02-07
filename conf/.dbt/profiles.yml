@@ -31,11 +31,11 @@ snowflake:
   outputs:
     agency_test:
       type: snowflake
-      account: "{{ env_var('SNOWFLAKE_DB_ACCOUNT') }}"
-      user: "{{ env_var('SNOWFLAKE_DB_USER') }}"
+      account: "{{ env_var('SNOWFLAKE_DB_ACCOUNT') }}"  
+      database: "{{ env_var('SNOWFLAKE_DB_NAME') }}"
       password: "{{ env_var('SNOWFLAKE_DB_PASSWORD') }}"
-      schema: "{{ env_var('SNOWFLAKE_DB_SCHEMA') }}"  
-      database: "{{ env_var('SNOWFLAKE_DB_NAME') }}"      
-      role: "{{ env_var('SNOWFLAKE_DB_ROLE') }}"      
+      role: "{{ env_var('SNOWFLAKE_DB_ROLE') }}"
+      schema: "{{ env_var('SNOWFLAKE_DB_SCHEMA') }}"
       threads: 10
+      user: "{{ env_var('SNOWFLAKE_DB_USER') }}"
       warehouse: "{{ env_var('SNOWFLAKE_DB_WAREHOUSE') }}"
