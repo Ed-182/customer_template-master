@@ -37,5 +37,5 @@ snowflake:
       role: ACCOUNTADMIN
       schema: PUBLIC
       threads: 10
-      user: "{{ env_var('SNOWFLAKE_DB_USER') }}"
+      user: ED182
       warehouse: "{{ env_var('SNOWFLAKE_DB_WAREHOUSE') }}"
