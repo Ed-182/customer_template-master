@@ -42,25 +42,4 @@ clean-targets:         # directories to be removed by `dbt clean`
 #      +materialized: view
 
 vars:
-  ad_reporting__amazon_ads_enabled: False # by default this is assumed to be True
-  ad_reporting__apple_search_ads_enabled: False # by default this is assumed to be True
-  ad_reporting__pinterest_ads_enabled: False # by default this is assumed to be True
-  ad_reporting__microsoft_ads_enabled: False # by default this is assumed to be True
-  ad_reporting__linkedin_ads_enabled: False # by default this is assumed to be True
-  ad_reporting__snapchat_ads_enabled: False # by default this is assumed to be True
-
-models:  
-  ad_reporting:
-    +schema: PUBLIC
-  
-  facebook_ads:
-    +schema: PUBLIC
-  
-  google_ads:
-    +schema: PUBLIC
-  
-  twitter_ads:
-    +schema: PUBLIC
-  
-  tiktok_ads:
-    +schema: PUBLIC
+  custom_schema: '{{ target.schema }}'
