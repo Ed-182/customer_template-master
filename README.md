@@ -1,4 +1,4 @@
-dbt project # customer_template-master
+DBT PROJECT
 
 This project runs some simple exemplar models of jaffle_shop and an aditional one which has a deployment.yml
 to run every 12 hours through fivetran. 
