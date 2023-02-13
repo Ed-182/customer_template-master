@@ -3,7 +3,7 @@ DBT PROJECT
 This project runs some simple exemplar models of jaffle_shop and an aditional one which has a deployment.yml
 to run every 12 hours through fivetran. 
 
-It has also two packages installed: "tiktok_ads_source" & "tiktok_ads". Those run from 7 source tables
+It has also two fivetran packages installed: "tiktok_ads_source" & "tiktok_ads". Those run from 7 source tables
 stored on big query: "ad_history", "ad_report_hourly", "adgruop_history", "adgroup_reoprt_hourly", "advertiser", 
 "campaign_history" & "campaign_report_hourly". Creates 14 staging tables & views and finally "tiktok_ads" throws
 5 final dashboards.
