@@ -5,7 +5,7 @@ to run every 12 hours through fivetran.
 
 It has also two fivetran packages installed: "tiktok_ads_source" & "tiktok_ads". Those run from 7 source tables
 stored on big query: "ad_history", "ad_report_hourly", "adgruop_history", "adgroup_reoprt_hourly", "advertiser", 
-"campaign_history" & "campaign_report_hourly". Creates 14 staging tables & views and finally "tiktok_ads" throws
+"campaign_history" & "campaign_report_hourly". Creates 14 staging tables & views and finally "tiktok_ads" package throws
 5 final dashboards.
 
 I used visual studio code with a docker environment and dbt-core.
