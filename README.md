@@ -15,7 +15,7 @@ I expect to run tiktok packages with fivetran transformations on a scheduled bas
 Clone the repository to your PC.
 
 Install Docker, VSC, dbt-core, copy paste the .csv files stored on "tiktok_ads/integrartion_tests/seeds" to "data"
-directory, rename them as following: "ad_history", "ad_report_hourly", "adgruop_history", "adgroup_reoprt_hourly", "advertiser", 
+directory, name them as following: "ad_history", "ad_report_hourly", "adgruop_history", "adgroup_reoprt_hourly", "advertiser", 
 "campaign_history" & "campaign_report_hourly".
 
 Set your "BIGQUERY_DB_NAME=<your_database>" & "BIGQUERY_DB_SCHEMA=tiktok_ads" and run dbt seed to populate your warehouse.
