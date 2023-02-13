@@ -14,7 +14,7 @@ I expect to run tiktok packages with fivetran transformations on a scheduled bas
 
 Clone the repository to your PC.
 
-Install Docker, VSC, dbt-core, copy paste the .csv files stored on tiktok_ads/integrartion_tests/seeds to data
+Install Docker, VSC, dbt-core, copy paste the .csv files stored on "tiktok_ads/integrartion_tests/seeds" to "data"
 directory, rename them as following: "ad_history", "ad_report_hourly", "adgruop_history", "adgroup_reoprt_hourly", "advertiser", 
 "campaign_history" & "campaign_report_hourly".
 
