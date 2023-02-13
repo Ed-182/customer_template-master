@@ -20,4 +20,4 @@ directory, name them as following: "ad_history", "ad_report_hourly", "adgruop_hi
 
 Set your "BIGQUERY_DB_NAME=<your_database>" & "BIGQUERY_DB_SCHEMA=tiktok_ads" and run dbt seed to populate your warehouse.
 
-Run "$ ./run_inside_docker.sh dbt run --select tiktok_ads" on your "Git Bash" terminal and get results on your database.
+Run "$ ./run_inside_docker.sh dbt run --select tiktok_ads" on your "Git Bash" terminal and get the results to your database.
