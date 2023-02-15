@@ -1,8 +1,0 @@
-version: 2
-
-models:
-  - name: concat
-    columns: 
-      - name: DEPT_ID
-        tests:
-          - not_null

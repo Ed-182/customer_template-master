@@ -1,9 +1,0 @@
-version: 2
-
-sources:
-  - name: fivetran
-    description: "connecting with fivetran"
-    database: FIVETRAN_DATABASE
-    schema: EMPLOYEE_DATA_SHEET
-    tables:
-      - name: EMPLOYEE_DATA 
