@@ -16,6 +16,6 @@ jobs:
       - name: Install dbt and dependencies
         run: |
           sudo apt-get update && sudo apt-get -y install git python3-pip
-          pip3 install dbt
+          pip install dbt core
       - name: Run dbt package
         run: dbt run -s tiktok_ads_source
