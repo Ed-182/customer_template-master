@@ -1,0 +1,16 @@
+name: tiktok_ads
+
+on:
+  schedule:
+    - cron: '30 19 * * *'  # Runs at 19:30 pm every day
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: tiktok_ads_source
+        run: -s tiktok_ads_source
+      - name: tiktok_ads
+        run: -s tiktok_ads
