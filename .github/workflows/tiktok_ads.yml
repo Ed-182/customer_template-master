@@ -1,0 +1,18 @@
+name: Daily DBT Package Run
+
+on:
+  schedule:
+    - cron: '57 19 * * *'  # Runs at 1:45 pm Mexico City time (UTC-6)
+
+jobs:
+  dbt:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dbt and dependencies
+        run: |
+          sudo apt-get update && sudo apt-get -y install git python3-pip
+          pip3 install dbt
+      - name: Run dbt package
+        run: dbt run --models <your package name>
