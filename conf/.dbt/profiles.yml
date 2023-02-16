@@ -1,4 +1,4 @@
-bigquery:
+default:
   target: agency_test 
   outputs:
     agency_test:
