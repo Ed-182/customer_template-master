@@ -5,7 +5,7 @@ on:
     branches:
       - add-customers-model
   schedule:
-    - cron: '0 21 * * *'  # Runs at 3:00 pm Mexico City time (UTC-6)
+    - cron: '40 18 * * *'  # Runs at 1:40 pm Mexico City time (UTC-6)
 
 jobs:
   dbt:
