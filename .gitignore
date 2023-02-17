@@ -4,5 +4,3 @@ dbt_packages/
 logs/
 .idea/
 .venv/
-conf/.dbt/.user.yml
-.config/
