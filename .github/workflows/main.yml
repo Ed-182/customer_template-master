@@ -19,7 +19,7 @@ jobs:
           pip install dbt-core dbt-bigquery
       - name: populate
         run: dbt seed
-      - name: run
+      - name: run tiktok_ads_source
         run: dbt run -s tiktok_ads_source
-      - name: run
+      - name: run tiktok_ads
         run: dbt run -s tiktok_ads       
