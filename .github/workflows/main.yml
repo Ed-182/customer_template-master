@@ -18,4 +18,4 @@ jobs:
           sudo apt-get update && sudo apt-get -y install git python3-pip
           pip install dbt-core
       - name: Run
-        run: dbt run -s tiktok_ads_source --profile default
+        run: dbt run -s tiktok_ads_source
