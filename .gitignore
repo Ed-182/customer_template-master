@@ -6,4 +6,3 @@ logs/
 .venv/
 conf/.dbt/.user.yml
 .config/
-project.env
