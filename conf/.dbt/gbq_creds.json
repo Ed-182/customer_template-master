@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "durable-zoo-375901",
+  "private_key_id": "7fe51dab918914158cef04862ccd55c84b19be74",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCaU6k3/HDkcnRi\nvR0buzxYyWCRdxKDbsJX2o4SSTwNAdSRfZOisbuqrm6mnZz67HN7enVqAcJ/GZpo\nt57WfnnJLU7G9TLfpTiVVbUXQe/JEqLQcZrljc2MB/N0DquG63WX+pLgszO2bxSq\nlFJfBIQzghjtwwgqK8+lXs44Tgi9BRYypwDDHQH+xkZ2Uh2P1Oz4gnY9lMOr1gld\nUPPTcTxWe9F8eG1rKtkylLT80DkefNhuVPpAQRDqIchBypQ3I2kkTUAUWi8aWHaH\nYtmg/vIFwC68XwCvcYREoWXPsaKOACrM9cO5c7TGXFLyu1JfqqmHkGSOlQDpsOvE\n5xHzwFKhAgMBAAECggEAEe8m+xqbA/FJFTBk8ZQQr0C3uC/eNufoLc14NSfNkrVj\nvoSZY47EAFHFChfG5mIUCYVxn6AUujB/gSvViZepD3f0b6qO/u50ZOZQ5SMEeplv\n0klhdsvD10IVSKdrx4IVaFP2PaaVm93MyQXzjJc5xcKYowjHKh9tQgqCbIik+1It\nva0R2XjKEiHy1A9Ee3J60VZF2PHmB11vDV2XNj5JJ99BYR+buzrSz9F18fnHwu+4\n1+/5PwbqfRMGJFMvzAVmEdRajt3BSSewGa7Ig+Yu0gjE/F+aNBnp/yTlJ/DDFWBi\nPxWPccWo2fx/0sTA31XufCd7+fIZz4DS1I356iAzAQKBgQDSCVKQEbqq74SGSHeN\nWN28oF9Q+SXmz+wPQOJxMJFqp8oHphjGubxq7R/pVSEaPgp4PLvf0JhzcEvu7UEH\nNQ1Cj3jiaziGp/NAtbmDFPlnmbSBYQrSn5KFjZV8wshYUxMz0hu3g9RhqFGc0Blg\nLodmtDAMqjxbUsiWNpfF15RTWwKBgQC8GV6stVQ84JnJHrl4MNDLG1PYYtQBqCrW\nQJQA5Nc79nqezKjmVCtFCicoCzBoIUVXVMwn6kZptid9HeeHqBjE/m3DvMBO7/FE\n1O0HZeFqai1S1LiHwKyBGYECbyHthQcPvL2Xy4BP5wE9JsgCMF8IIjwJUqm7DFTk\n+MUhWa4+swKBgB1oYL77PH+ieZOzocmQn7tBWRclS0E963dXRl1Cx5l/VLItd1qb\ntt3hxY4N9UyPUzfyiPuVYUMIfhk97tTrgKfJHsvU510zNsPgrdDEpwbyZmuXAsTq\nwsEgScXmH9b+Cro+uNLBCoOB5atnF6Z33U1r/S5Ix5qhxKQDkMyKmqHxAoGAPILA\n1TikN81dS7kJm2PA14YcDAGHCF1sIm617i+wGgcp3Uojj61GGjiw7g3jbaw+XWDX\nKIQSUNGblIF5SUfHaCAdeZmQGBTSff0tn3Kj+JLdr8bk8i8Gj6V/viO4O2vPIL3s\nFBgQWCQNXvnJ4AJln/07aRhhp93Itbxd1mO+TUcCgYEAkUyJDYCyGaNk+4qwyzx4\nmreai0tbucBixcQY9vf7YL76LUNqw3OXmEwbFwA6VPaz48JlF8RctfENtXvDiMTK\nkR/+5vc95vp+PjB50tgIA387YYoOG3DWNgG4ZUkcZeHJjDcNJO9psWhkWY7j4w1F\nwWzwBdv7iNPIda15dKTlwtI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dbt-learn-admin@durable-zoo-375901.iam.gserviceaccount.com",
+  "client_id": "106708150862891264745",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dbt-learn-admin%40durable-zoo-375901.iam.gserviceaccount.com"
+}

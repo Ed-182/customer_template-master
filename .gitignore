@@ -4,9 +4,5 @@ dbt_packages/
 logs/
 .idea/
 .venv/
-conf/.dbt/.user.yml
-conf/.dbt/gbq_creds.json
-conf/.dbt/*.json
 .config/
-.env
-project.env
+
