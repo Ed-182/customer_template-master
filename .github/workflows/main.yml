@@ -1,6 +1,6 @@
 name: main
 
-#on:
+on:
 #  push:
 #    branches:
 #      - add-customers-model
