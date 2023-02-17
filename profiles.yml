@@ -4,8 +4,8 @@ default:
     agency_test:
       type: bigquery
       method: service-account
-      database: "{{ var('BIGQUERY_DB_NAME') }}"
-      schema: "{{ var('BIGQUERY_DB_SCHEMA') }}"
+      database: durable-zoo-375901
+      schema: tiktok_ads
       threads: 10
       timeout_seconds: 300
       priority: interactive
