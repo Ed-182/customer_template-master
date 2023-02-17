@@ -16,7 +16,6 @@ jobs:
       - name: Install dbt and dependencies
         run: |
           sudo apt-get update && sudo apt-get -y install git python3-pip
-          pip install dbt-core
-          pip install dbt bigquery
+          pip install dbt-core dbt-bigquery
       - name: Run
         run: dbt run -s tiktok_ads_source
