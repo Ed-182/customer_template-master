@@ -5,7 +5,7 @@ on:
     branches:
     - add-customers-model
   schedule:
-    - cron: '25 20 * * *'
+    - cron: '55 20 * * *'
 
 jobs:
   dbt-run:
@@ -17,9 +17,10 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get -y install git python3-pip
           pip install dbt-core dbt-bigquery
-      - name: Run dbt
-        env:
-          DBT_PROFILES_DIR: ${{ github.workspace }}
-          DBT_PROFILE: ${{ secrets.DBT_PROFILE }}
-        run: dbt run --profiles-dir . --profile ${{ env.DBT_PROFILE }}
+      - name: Populate
+        run: dbt run seed
+      - name: tiktok source
+        run: dbt run -s tiktok_ads_source
+      - name: tiktok ads
+        run: dbt run -s tiktok_ads               
   
