@@ -1,23 +1,19 @@
-name: deployment
+name: dbt deploy
 
 on:
-#  push:
-#    branches:
-#    - add-customers-model
   schedule:
-    - cron: '24 19 * * *'
+    - cron: "30 19 * * *"
 
 jobs:
   dbt-run:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
-      - name: Install dbt and dependencies
-        run: |
-          sudo apt-get update && sudo apt-get -y install git python3-pip
-          pip install dbt-core dbt-bigquery
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
       - name: Run dbt
         env:
           DBT_PROFILES_DIR: ${{ github.workspace }}
-        run: dbt run --profiles-dir . --profile {{ secrets.DBT_PROFILE }}     
+        run: dbt run --profiles-dir . --profile ${{ secrets.DBT_PROFILE }}
+  
