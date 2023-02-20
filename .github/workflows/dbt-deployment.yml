@@ -1,11 +1,8 @@
 name: dbt-deployment
 
 on:
-  push:
-    branches:
-    - add-customers-model
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: "25 21 * * *"
 
 jobs:
   dbt-run:
