@@ -5,7 +5,7 @@ on:
     branches:
     - add-customers-model
   schedule:
-    - cron: '05 20 * * *'
+    - cron: '10 20 * * *'
 
 jobs:
   dbt-run:
@@ -20,5 +20,5 @@ jobs:
       - name: Run dbt
         env:
           DBT_PROFILES_DIR: ${{ github.workspace }}
-        run: dbt run --profiles-dir . --profile {{ secrets.DBT_PROFILE }} 
+        run: dbt run --profiles-dir . --profile ${{ secrets.DBT_PROFILE }} 
   
