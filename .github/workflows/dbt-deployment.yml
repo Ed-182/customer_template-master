@@ -1,9 +1,9 @@
 name: dbt-deployment
 
 on:
-#  push:
-#    branches:
-#    - add-customers-model
+  push:
+    branches:
+    - add-customers-model
   schedule:
     - cron: '57 19 * * *'
 
