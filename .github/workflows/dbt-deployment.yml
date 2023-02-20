@@ -5,7 +5,7 @@ on:
     branches:
     - add-customers-model
   schedule:
-    - cron: '57 19 * * *'
+    - cron: '59 19 * * *'
 
 jobs:
   dbt-run:
