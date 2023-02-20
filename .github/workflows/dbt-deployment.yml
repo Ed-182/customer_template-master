@@ -2,7 +2,7 @@ name: dbt deploy
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*41 19 * * *"
 
 jobs:
   dbt-run:
