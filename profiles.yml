@@ -4,7 +4,7 @@ default:
     agency_test:
       type: bigquery
       method: service-account
-      database: 'durable-zoo-375901'
+      database: 'dbt-learn-project-378503'
       schema: 'tiktok_ads'
       threads: 10
       timeout_seconds: 300
