@@ -22,9 +22,9 @@ jobs:
       - name: Debug
         env:
           DBT_PPROFILES_DIR: ./
+          BIGQUERY_DB_CREDS: ${{ secrets.GBQ_CREDENTIALS }}
           BIGQUERY_DB_NAME: ${{ secrets.BIGQUERY_DB_NAME }}
-          BIGQUERY_DB_SCHEMA: ${{ secrets.BIGQUERY_DB_SCHEMA }}
-          BIGQUERY_DB_CREDS: ${{ secrets.GBQ_CREDENTIALS }}        
+          BIGQUERY_DB_SCHEMA: ${{ secrets.BIGQUERY_DB_SCHEMA }}        
         run: dbt debug --profiles-dir .     
             
   
