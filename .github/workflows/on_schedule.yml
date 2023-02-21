@@ -1,8 +1,11 @@
-name: dbt-deployment
+name: on schedule
 
 on:
+  push:
+    branches:
+      - development 
   schedule:
-    - cron: "52 21 * * *"
+    - cron: "00 00 * * *"
 
 jobs:
   dbt-run:
