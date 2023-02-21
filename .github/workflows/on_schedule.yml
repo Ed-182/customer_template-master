@@ -6,7 +6,7 @@ on:
       - development      
   schedule:
     - cron: "0 0 * * *"
-workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   dbt-run:
@@ -26,5 +26,5 @@ jobs:
           BIGQUERY_DB_SCHEMA: ${{ secrets.BIGQUERY_DB_SCHEMA }}        
         run: |
           cd ${{ github.workspace }}
-          dbt debug --profiles-dir
+          dbt debug --profiles-dir ${{ github.workspace }}
   
