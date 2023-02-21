@@ -17,10 +17,8 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get -y install git python3-pip
           pip install dbt-core dbt-bigquery
-      - name: Populate
+      - name: seed
         run: dbt seed
-      - name: tiktok source
-        run: dbt run -s tiktok_ads_source
-      - name: tiktok ads
-        run: dbt run -s tiktok_ads               
+      - name: run
+        run: dbt run             
   
