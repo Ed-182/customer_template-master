@@ -22,6 +22,7 @@ jobs:
       - name: Debug
         env:
           DBT_PPROFILES_DIR: ./
+          PRIVATE_KEY_ID: ${{ secrets.PRIVATE_KEY_ID }}
           BIGQUERY_DB_NAME: ${{ secrets.BIGQUERY_DB_NAME }}
           BIGQUERY_DB_SCHEMA: ${{ secrets.BIGQUERY_DB_SCHEMA }}        
         run: dbt debug --profiles-dir .     
