@@ -1,4 +1,4 @@
-name: On schedule
+name: on schedule
 
 on:
   push:
@@ -20,6 +20,6 @@ jobs:
       - name: Debug
         env:
           DBT_PROFILES_DIR: ${{ github.workspace }}          
-        run: dbt debug --profiles-dir . --profile ${{ secrets.DBT_PROFILE }}       
+        run: dbt debug --profiles-dir . --profile {{ secrets.DBT_PROFILE }}       
             
   
