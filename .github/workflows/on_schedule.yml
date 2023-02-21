@@ -24,6 +24,6 @@ jobs:
           DBT_PPROFILES_DIR: ${{ github.workspace }}
           BIGQUERY_DB_NAME: ${{ secrets.BIGQUERY_DB_NAME }}
           BIGQUERY_DB_SCHEMA: ${{ secrets.BIGQUERY_DB_SCHEMA }}        
-        run: dbt debug --profiles-dir .     
+        run: dbt debug --profiles-dir . --profile {{ secrets.DBT_PROFILE }} 
             
   
