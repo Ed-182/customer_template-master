@@ -14,17 +14,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - name: Install dbt and dependencies
-        run: |
-          sudo apt-get update && sudo apt-get -y install git python3-pip
-          pip install dbt-core dbt-bigquery
-
       - id: 'auth'
       - name: 'Authenticate to Google Cloud'
       - uses: `google-github-actions/auth@v0.4.0'
       - with:
-         credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'    
+          - credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}' 
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dbt and dependencies
+        run: |
+          sudo apt-get update && sudo apt-get -y install git python3-pip
+          pip install dbt-core dbt-bigquery   
       
       - name: Debug
         env:
