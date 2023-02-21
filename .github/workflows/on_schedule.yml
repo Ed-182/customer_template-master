@@ -1,6 +1,9 @@
 name: on schedule
 
 on:
+  push:
+    branches:
+      - development      
   schedule:
     - cron: "0 0 * * *"
 woorkflow_dispatch:
