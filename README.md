@@ -4,11 +4,12 @@ This repository provides a starting point for running "tiktok_ads" your first fi
 
 ## Structure
 
-- `models/`: This directory contains all of the DBT models for the project.
-- `macros/`: This directory contains any macros that are used in the models.
 - `data/`: This directory contains tiktok dummy data that is used to populate the initial state of the data warehouse.
 - `packages/`: This directory contains the following packages: tiktok_ads & dependant (tiktok_ads_source, dbt_utils, fivetran_utils & spark_utils)
-- `tests/`: This directory contains any tests that are used to validate the project's models.
+- `packages/tiktok_ads_source/models/`: This directory contains "tiktok_ads_source" models for the project.
+- `packages/tiktok_ads/models/`: This directory contains "tiktok_ads" models for the project.
+- `macros/`: This directory can be used to write additional macros to the models.
+- `tests/`: This directory can be used to write additional tests to validate the project's models.
 - `dbt_project.yml`: This file contains the configuration for the DBT project, including the target database and schema.
 - `conf/.dbt/profiles.yml`: This file contains the configuration for connecting to different environments (e.g. development, staging, production)
 
