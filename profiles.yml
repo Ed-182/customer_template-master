@@ -9,7 +9,7 @@ default:
       threads: 10
       timeout_seconds: 300
       priority: interactive
-      keyfile: "{{ env_var('BIGQUERY_DB_CREDS') }}"
+      keyfile: conf/.dbt/gbq_creds.json
       
 clickhouse:
   target: agency_test
