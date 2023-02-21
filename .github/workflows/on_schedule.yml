@@ -5,7 +5,7 @@ on:
     branches:
       - development
   schedule:
-    - cron: "00 01 * * *"
+    - cron: "00 00 * * *"
 
 jobs:
   dbt-run:
