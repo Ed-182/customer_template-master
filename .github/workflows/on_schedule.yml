@@ -1,31 +1,27 @@
 name: on schedule
 
 on:
-  push:
-    branches:
-      - development
   schedule:
-    - cron: "00 00 * * *"
-  
-
+    - cron: "0 0 * * *"
+woorkflow_dispatch:
 
 jobs:
   dbt-run:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
       - name: Install dbt and dependencies
         run: |
           sudo apt-get update && sudo apt-get -y install git python3-pip
           pip install dbt-core dbt-bigquery
       - name: Debug
         env:
-          DBT_PPROFILES_DIR: ./
-          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
-          SA_EMAIL: ${{ secrets.SA_EMAIL }}
+          DBT_PPROFILES_DIR: ${{ github.workspace }}
+          BIGQUERY_KEY: ${{ secrets.BIGQUERY_KEY }}
           BIGQUERY_DB_NAME: ${{ secrets.BIGQUERY_DB_NAME }}
           BIGQUERY_DB_SCHEMA: ${{ secrets.BIGQUERY_DB_SCHEMA }}        
-        run: dbt debug
-            
+        run: |
+          cd ${{ github.workspace }}
+          dbt debug --profiles-dir ${{ github.workspace }}
   

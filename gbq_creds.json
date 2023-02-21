@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "dbt-learn-project-378503",
+  "private_key_id": "f27d08087900b4088acfc7a732e63cf744d2d16e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCs7ejzLnBlfJQI\np0jC/VECqZuWrqqc3YjRBo8eRo37zcFzArxh3AMts0/wX63Jm/ZATDeTQKDcWMU6\nSC59E8u3fIU4DHg8FCvpLC3lN8FBrciOq0WJ4co66SCXmRA2Hjo3aTE2NSiFqHzO\nSbSAywTQAPshMX0f7MmHhqZgnZVt+NvAII4AOg461wkchs8tQIjMzi0UX/SbdjOG\nkSosK8N2XZkTiCkOebpN3Nb4J1gb/pCBQTBsDZKMivgiixU59VRU3IP6XXUc7aIO\n6syfaE/R/PeA8gQ8VKyw54CphuRYsasNjz7CZbNYG+8o1Ud3eHo9gdygFIR8XqSI\nlPFpcye5AgMBAAECggEAVjklrqMYDbIpCYuHXxn5W49/8YjTrvVSs45Gq/zX7JZx\n/0t87HpL52yBzkOWnnCyPusBxt0xl8x3QpEdBOZq6+kdb43gIWyZXGDX3XOIW5wv\n5NsHCDHZqLf2tT/vclxuAJTlobatpr8Uw7LCWnlfw+rJTIqlbdadwYJk0MWh7TuX\nMngygGGyHU4Az48vU8bQAgePSfg6BltswfcPekcbL3X92tevREPJDjFEBuhJHx98\nWPY7hvzrOQCdvIo/mf+IupF0PhwcCxYPxsgJ67SCX1/Yrx5udLhbVJ1zfW/ZmkJB\nDiEQSH+G4bqnRJlCoBG5Wjx18T5l6T1/Dv80nQNrxQKBgQDa5EeHwQE+ghqdqQBO\nART3KLatP6jdWx3wNU60EE2RuKAnQTgNtHjX8yzwZiqR+yI0UhMphs0vtm4oQgGQ\nV1YLrYVpWMfWvnBt1//tnIddmUD1Kn3f0zCKJntnzCbl11MM2V9hdlhlqWRbHfs2\nkulXPkF67eMV9T2ar3pCAiG+hwKBgQDKPuan/w7M3LPBD0M7ksQ6moeQ3cR+ysnJ\nzBYluAoN/zGfyVKi7n5Y6QRyPO+uw265THuzI0OUr7XVMAAK3WFJH3gkf3ipef6M\ncfU29erfH2ONVVceoLoHAObD3Ssq3rFAUq1Nps40D/2p395zkAxbLUV49VJ5tc1n\nyugQMbE3vwKBgBsOnrzsIaA9atbUPiJmRdYrZTFTLid2jOPVYw4k+cGqhbl0eV5Q\nUaO3/nUU2+xBk7/N6Wp3rENalJFLX3AdK5iz8UrNW55y2ejqC0uuzpjGSd5ES1zw\neQ6KpTR2atR8YlqzP/QHMfQXFT2iHhxn2oobOvLcFvbu4peNW1pvcwZfAoGBAMHr\ndBCLIC7QQ88OimG5xUuH1grSiVElsjw64tWB1Ko9EeDrEcBGO4GW0/uRcCQ7IZSs\nwEMwweD0Zb4nSzMft+N8OB+O1ixyW99geUYcn/sWxsbCmEk2xYhnld0h2P0/D+fk\nHmXBViBXYNscW9ikuyRFkUJ8v3sSFgS6aq70Zr9TAoGATreUc1MOkQDE2KFYZ0IS\nabj3xZsNhUXItMdlWOI6rBybl8trcD5+WBkO6uhmFG2Y9u3RhoVLaBNeXeQ2qsRj\nQfkxTGdvjIGDFeS2JdAQHHwGNMIBqpRHHc1p3to2TiEasRqdvY4iCDwsegbcfpjc\ncD8gtJQswfx8G5LSuwtuLDk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dbt-learn-admin@dbt-learn-project-378503.iam.gserviceaccount.com",
+  "client_id": "101770060217366077769",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dbt-learn-admin%40dbt-learn-project-378503.iam.gserviceaccount.com"
+}
