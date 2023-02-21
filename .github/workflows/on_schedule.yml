@@ -24,7 +24,7 @@ jobs:
           DBT_PPROFILES_DIR: ./
           BIGQUERY_DB_NAME: ${{ secrets.BIGQUERY_DB_NAME }}
           BIGQUERY_DB_SCHEMA: ${{ secrets.BIGQUERY_DB_SCHEMA }}
-          BIGQUERY_DB_CREDS: ${{ secrets.BIGQUERY_DB_CREDS }}        
+          BIGQUERY_DB_CREDS: ${{ secrets.GBQ_CREDENTIALS }}        
         run: dbt debug --profiles-dir .     
             
   
