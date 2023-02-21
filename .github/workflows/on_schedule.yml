@@ -17,9 +17,9 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get -y install git python3-pip
           pip install dbt-core dbt-bigquery
-      - name: Run
+      - name: Debug
         env:
           DBT_PROFILES_DIR: ${{ github.workspace }}          
-        run: dbt run --profiles-dir . --profile ${{ secrets.DBT_PROFILE }}       
+        run: dbt debug --profiles-dir . --profile ${{ secrets.DBT_PROFILE }}       
             
   
