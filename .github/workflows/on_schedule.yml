@@ -19,10 +19,16 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get -y install git python3-pip
           pip install dbt-core dbt-bigquery
+
+      - id: 'auth'
+      - name: 'Authenticate to Google Cloud'
+      - uses: `google-github-actions/auth@v0.4.0'
+      - with:
+         credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'    
+      
       - name: Debug
         env:
           DBT_PPROFILES_DIR: ./
-          serviceAccountJsonPlainText: ${{ secrets.my_json_content_var }}
           BIGQUERY_DB_NAME: ${{ secrets.BIGQUERY_DB_NAME }}
           BIGQUERY_DB_SCHEMA: ${{ secrets.BIGQUERY_DB_SCHEMA }}        
         run: dbt debug --profiles-dir .     
