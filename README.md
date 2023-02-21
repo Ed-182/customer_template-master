@@ -1,6 +1,6 @@
 # Custom Transform Framework
 
-This repository provides a starting point for creating a new DBT project. It includes a basic file structure and some example files to help you get started quickly.
+This repository provides a starting point for running your first fivetran dbt package. It includes a basic file structure and some example files to help you get started quickly.
 
 ## Structure
 
