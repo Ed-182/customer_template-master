@@ -26,6 +26,6 @@ jobs:
           SA_EMAIL: ${{ secrets.SA_EMAIL }}
           BIGQUERY_DB_NAME: ${{ secrets.BIGQUERY_DB_NAME }}
           BIGQUERY_DB_SCHEMA: ${{ secrets.BIGQUERY_DB_SCHEMA }}        
-        run: dbt debug --profiles-dir . 
+        run: dbt debug
             
   
