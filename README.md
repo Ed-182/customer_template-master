@@ -18,9 +18,10 @@ This repository provides a starting point for running "tiktok_ads" your first fi
 1. Clone this repository to your local machine.
 2. Fill the environment variables in the `.env` file.
 3. Configure the different environments in the `profiles.yml` file.
-4. Run `dbt run` to seed your data warehouse and build the models within the packages.
+4. Run `dbt seed` to seed your data warehouse.
 5. Run `dbt test` to run any tests for the models.
-6. Push to your remote repository and it will test and run daily at 00:00 UTC
+6. Run `dbt run -s tiktok_ads_source` to build the models within the package.
+7. Run `dbt run -s tiktok_ads` to build the models within the package.
 
 ## Additional Resources
 
