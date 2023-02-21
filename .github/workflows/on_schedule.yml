@@ -21,10 +21,10 @@ jobs:
       - name: Debug
         env:
           DBT_PPROFILES_DIR: ${{ github.workspace }}
-          BIGQUERY_KEY: ${{ secrets.BIGQUERY_KEY }}
+          BIGQUERY_KEY: ${{ github.workspace }}/${{ secrets.BIGQUERY_KEY }}
           BIGQUERY_DB_NAME: ${{ secrets.BIGQUERY_DB_NAME }}
           BIGQUERY_DB_SCHEMA: ${{ secrets.BIGQUERY_DB_SCHEMA }}        
         run: |
           cd ${{ github.workspace }}
-          dbt debug --profiles-dir ${{ github.workspace }}/${{ secrets.BIGQUERY_KEY }}
+          dbt debug --profiles-dir ${{ github.workspace }}
   
