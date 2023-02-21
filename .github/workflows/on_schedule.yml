@@ -1,6 +1,9 @@
 name: On schedule
 
 on:
+  push:
+    branches:
+      - development
   schedule:
     - cron: "00 00 * * *"
 
@@ -14,8 +17,6 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get -y install git python3-pip
           pip install dbt-core dbt-bigquery
-      - name: Seed
-        run: dbt seed
       - name: Test
         run: dbt test        
       - name: Run
