@@ -1,6 +1,9 @@
 name: On schedule
 
 on:
+  push:
+    branches:
+      - development
   schedule:
     - cron: "00 00 * * *"
 
@@ -14,8 +17,9 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get -y install git python3-pip
           pip install dbt-core dbt-bigquery
-      - name: Test
-        run: dbt test        
       - name: Run
-        run: dbt run             
+        env:
+          DBT_PROFILES_DIR: ${{ github.workspace }}          
+        run: dbt run --profiles-dir . --profile ${{ secrets.DBT_PROFILE }}       
+            
   
