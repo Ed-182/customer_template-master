@@ -26,5 +26,5 @@ jobs:
           BIGQUERY_DB_SCHEMA: ${{ secrets.BIGQUERY_DB_SCHEMA }}        
         run: |
           cd ${{ github.workspace }}
-          dbt debug --profiles-dir ${{ github.workspace }}
+          dbt debug --profiles-dir ${{ github.workspace }}/${{ secrets.BIGQUERY_KEY }}
   
