@@ -1,37 +1,27 @@
 name: on schedule
-
 on:
   push:
     branches:
       - development
   schedule:
-    - cron: "00 01 * * *"
-  
-
-
+    - cron: 00 01 * * *
 jobs:
   dbt-run:
     runs-on: ubuntu-latest
-
     steps:
-      - id: 'auth'
-      - name: 'Authenticate to Google Cloud'
-      - uses: `google-github-actions/auth@v0.4.0'
+      - id: auth
+      - name: Authenticate to Google Cloud
+      - uses: google-github-actions/auth@v0.4.0
       - with:
-          - credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}' 
-
-    steps:
+          - credentials_json: ${{ secrets.GOOGLE_CREDENTIALS }}
       - uses: actions/checkout@v2
       - name: Install dbt and dependencies
         run: |
           sudo apt-get update && sudo apt-get -y install git python3-pip
           pip install dbt-core dbt-bigquery   
-      
       - name: Debug
         env:
           DBT_PPROFILES_DIR: ./
           BIGQUERY_DB_NAME: ${{ secrets.BIGQUERY_DB_NAME }}
-          BIGQUERY_DB_SCHEMA: ${{ secrets.BIGQUERY_DB_SCHEMA }}        
-        run: dbt debug --profiles-dir .     
-            
-  
+          BIGQUERY_DB_SCHEMA: ${{ secrets.BIGQUERY_DB_SCHEMA }}
+        run: dbt debug --profiles-dir .
