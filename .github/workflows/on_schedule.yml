@@ -7,12 +7,7 @@ on:
   schedule:
     - cron: "00 07 * * *"
   
-  env:
-  DBT_PPROFILES_DIR: ./
 
-  BIGQUERY_DB_NAME: ${{ secrets.BIGQUERY_DB_NAME }}
-  BIGQUERY_DB_SCHEMA: ${{ secrets.BIGQUERY_DB_SCHEMA }}
-  BIGQUERY_CREDS: ${{ secrets.BIGQUERY_CREDS }}
 
 jobs:
   dbt-run:
@@ -24,7 +19,13 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get -y install git python3-pip
           pip install dbt-core dbt-bigquery
-      - name: Debug        
+      - name: Debug
+        env:
+          DBT_PPROFILES_DIR: ./
+
+          BIGQUERY_DB_NAME: ${{ secrets.BIGQUERY_DB_NAME }}
+          BIGQUERY_DB_SCHEMA: ${{ secrets.BIGQUERY_DB_SCHEMA }}
+          BIGQUERY_CREDS: ${{ secrets.BIGQUERY_CREDS }}        
         run: dbt debug --profiles-dir .     
             
   
