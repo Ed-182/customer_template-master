@@ -27,11 +27,6 @@ This repository provides a starting point for running your first fivetran dbt pa
 - [DBT documentation](https://docs.getdbt.com/)
 - [DBT community](https://discourse.getdbt.com/)
 
-## Best practices
-
-- [DBT / SQL Best practices](docs/best_practices.MD)
-- [DBT Naming conventions](docs/naming_convention.MD)
-
 ## Contributing
 
 If you would like to contribute to this template, please fork the repository and submit a pull request.
