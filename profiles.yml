@@ -1,4 +1,4 @@
-DBT_PROFILE:
+default:
   target: agency_test 
   outputs:
     agency_test:
