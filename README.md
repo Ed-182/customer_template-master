@@ -7,7 +7,7 @@ This repository provides a starting point for running your first fivetran dbt pa
 - `models/`: This directory contains all of the DBT models for the project.
 - `macros/`: This directory contains any macros that are used in the models.
 - `data/`: This directory contains tiktok dummy data that is used to populate the initial state of the data warehouse.
-- `packages/`: This directory contains the following packages: tiktok_ads & dependant packages (tiktok_ads_source, dbt_utils, fivetran_utils & spark_utils)
+- `packages/`: This directory contains the following packages: tiktok_ads & dependant (tiktok_ads_source, dbt_utils, fivetran_utils & spark_utils)
 - `tests/`: This directory contains any tests that are used to validate the project's models.
 - `dbt_project.yml`: This file contains the configuration for the DBT project, including the target database and schema.
 - `conf/.dbt/profiles.yml`: This file contains the configuration for connecting to different environments (e.g. development, staging, production)
