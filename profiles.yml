@@ -9,6 +9,7 @@ default:
       threads: 10
       timeout_seconds: 300
       priority: interactive
+      keyfile: ${{ secrets.BIGQUERY_KEY }}
       
 clickhouse:
   target: agency_test
