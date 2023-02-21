@@ -1,26 +1,26 @@
-# DBT Project Template
+# Custom Transform Framework
 
-This repository provides a starting point for creating a new DBT project. It includes a basic file structure and some example files to help you get started quickly.
+This repository provides a starting point for running "tiktok_ads" your first fivetran dbt package. It includes a basic file structure and some example files to help you get started quickly.
 
 ## Structure
 
-- `models/`: This directory contains all of the DBT models for the project.
-- `macros/`: This directory contains any macros that are used in the models.
-- `data/`: This directory contains any seed data that is used to populate the initial state of the data warehouse.
-- `tests/`: This directory contains any tests that are used to validate the project's models.
+- `data/`: This directory contains tiktok dummy data that is used to populate the initial state of the data warehouse.
+- `packages/`: This directory contains the following packages: tiktok_ads & dependant (tiktok_ads_source, dbt_utils, fivetran_utils & spark_utils)
+- `packages/tiktok_ads_source/models/`: This directory contains "tiktok_ads_source" models for the project.
+- `packages/tiktok_ads/models/`: This directory contains "tiktok_ads" models for the project.
+- `macros/`: This directory can be used to write additional macros to the models.
+- `tests/`: This directory can be used to write additional tests to validate the project's models.
 - `dbt_project.yml`: This file contains the configuration for the DBT project, including the target database and schema.
-- `.env.example`: Copy this example into file `.env`. This file contains environment variables that are used to configure the project.
 - `conf/.dbt/profiles.yml`: This file contains the configuration for connecting to different environments (e.g. development, staging, production)
 
 ## Getting Started
 
 1. Clone this repository to your local machine.
-2. Install the necessary dependencies by running `dbt deps`.
-3. Customize the file structure and example files to suit your needs.
-4. Fill the environment variables in the `.env` file.
-5. Configure the different environments in the `profiles.yml` file.
-6. Run `dbt run` to build the models and seed the data warehouse.
-7. Run `dbt test` to run any tests for the models.
+2. Fill the environment variables in the `.env` file.
+3. Configure the different environments in the `profiles.yml` file.
+4. Run `dbt run` to seed your data warehouse and build the models within the packages.
+5. Run `dbt test` to run any tests for the models.
+6. Push to your remote repository and it will test and run daily at 00:00 UTC
 
 ## Additional Resources
 
@@ -28,15 +28,6 @@ This repository provides a starting point for creating a new DBT project. It inc
 - [DBT documentation](https://docs.getdbt.com/)
 - [DBT community](https://discourse.getdbt.com/)
 
-## Best practices
-
-- [DBT / SQL Best practices](docs/best_practices.MD)
-- [DBT Naming conventions](docs/naming_convention.MD)
-
 ## Contributing
 
 If you would like to contribute to this template, please fork the repository and submit a pull request.
-
-## License
-
-This template is available under the [MIT License](LICENSE).
