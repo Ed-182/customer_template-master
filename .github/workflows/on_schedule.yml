@@ -21,7 +21,7 @@ jobs:
           pip install dbt-core dbt-bigquery
       - name: Debug
         env:
-          DBT_PPROFILES_DIR: ${{ github.workspace }}
+          DBT_PPROFILES_DIR: ./
           GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
           SA_EMAIL: ${{ secrets.SA_EMAIL }}
           BIGQUERY_DB_NAME: ${{ secrets.BIGQUERY_DB_NAME }}
