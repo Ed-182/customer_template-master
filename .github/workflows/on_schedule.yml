@@ -25,10 +25,10 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get -y install git python3-pip
           pip install dbt-core dbt-bigquery
-      - name: Debug
+      - name: Run
         env:
           DBT_PPROFILES_DIR: './'
           BIGQUERY_DB_NAME: ${{ secrets.BIGQUERY_DB_NAME }}
           BIGQUERY_DB_SCHEMA: ${{ secrets.BIGQUERY_DB_SCHEMA }}        
-        run: dbt debug 
+        run: dbt run 
   
