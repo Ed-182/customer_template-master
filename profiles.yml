@@ -9,7 +9,9 @@ default:
       threads: 10
       timeout_seconds: 300
       priority: interactive
+#     keyfile: conf/.dbt/gbq_creds.json
       keyfile: ./clave.json
+      
       
 clickhouse:
   target: agency_test
